@@ -116,9 +116,10 @@ let bar = (data) => {
 /*-----------------------CARGAR PAGINA en cache-------------------- */
 
 let load = (data) => {
-  let meteo = localStorage.getItem("meteo");
+  /*CARGAR DATOS DE FUNCIONES PLOT Y BARD EN FUNCIONES SEPARADAS */
 };
 (function () {
+  let meteo = localStorage.getItem("meteo");
   if (meteo == null) {
     let URL =
       "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&daily=uv_index_max&timezone=auto";
